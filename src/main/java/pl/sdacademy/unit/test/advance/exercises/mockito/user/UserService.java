@@ -15,7 +15,9 @@ public class UserService {
 
     public User createUser(final User user) {
         if (userValidator.isUserValid(user)) {
-            return userRepository.addUser(user);
+            User userFromDb = userRepository.addUser(user);
+            userFromDb.setLastName(userFromDb.getLastName().toUpperCase());
+            return userFromDb;
         }
         throw new IllegalArgumentException("User is invalid");
     }

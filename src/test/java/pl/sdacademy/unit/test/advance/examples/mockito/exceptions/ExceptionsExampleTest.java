@@ -1,7 +1,8 @@
-package pl.sdacademy.unit.test.advance.examples.exceptions;
+package pl.sdacademy.unit.test.advance.examples.mockito.exceptions;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import pl.sdacademy.unit.test.advance.examples.exceptions.ExceptionsExample;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.assertThrows;
